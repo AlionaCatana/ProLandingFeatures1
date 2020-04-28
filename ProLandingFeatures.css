@@ -1,0 +1,200 @@
+
+/* ***********PALETTE************** */
+/* #AFB1B3, #FF2A22, #333333,#161616 (header), #383838 (h1), #555555,#636363 (text p), #F9F9F9, #FCFCFC, #FCFCFC */
+
+
+/* *******************COMMON SYLES************************ */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #636363;
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+img.w90{
+    width: 90%;
+}
+
+/* *****************HEADER****************** */
+header{
+    background-color: #161616;
+    height: 4em;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #636363;
+    font-size: 1em;
+    font-weight: 600;
+    z-index: 100;
+}
+header .container{
+    width: 77%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    background-color: #161616;
+    position: relative;
+}
+header li{
+    display: table-cell;
+    vertical-align: middle;
+}
+#brand, #nav-bar, #bars{
+    display: table;
+    height: 100%;
+    float: left;
+}
+#nav-bar{
+    float: right;
+}
+#nav-bar li{
+    padding: 0 1em;
+    transition: .5s;
+}
+/* ************HOVER************ */
+#nav-bar li:hover>a{
+    color: #fff;
+}
+#bars{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+#bars button{
+    background-color: #161616;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* **************ACTIVE************* */
+#bars button:active{
+    background-color: #FF2A22;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    color: black;
+}
+/* **************************** */
+
+/* *****************MAIN***************** */
+main{
+    width: 77vw;
+    margin: auto;
+    /* display: block; */
+    background-color: #fff;
+    position: absolute;
+    top: 3em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 1.5em 0 0.3em 0;
+}
+main>h1+p{
+    margin-bottom: 1.5em;
+}
+main h2{
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1em 0 1em 0;
+}
+main p{
+    color: #636363;
+    line-height: 1.5em;
+}
+main .col-3{
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3%;
+    margin: -3px;
+}
+main figure{
+    padding-top: 1.5em;
+}
+main ul li{
+    width: 70%;
+    padding: 1em;
+    position: relative;
+}
+main ul li>div{
+    position: absolute;
+    top: 2em;
+    left: -2.5em;
+    color: #636363;
+}
+
+/* **************FOOTER************* */
+footer{
+    background: url(https://cssmaterial.com/prolanding/demo/img/feature-bg.jpg);
+    height: 3em;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+footer #fixed-icon{
+    position: fixed;
+    right: 4em;
+    z-index: 1000;
+}
+footer #fixed-icon a{
+    padding: 0.5em 1em;
+    background-color: #FF2A22;
+    color: white;
+}
+/* ******************************** */
+
+
+/* Mobile */
+@media (max-width: 1080px){
+    main figure.col-3{
+        display: none;
+    }
+    main .col-3{
+        display: inline-block;
+        width: 40%;
+        margin-left: 10%;
+    }
+    main ul li{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px){
+    #nav-bar{
+        display: none;
+    }
+    #bars{
+        display: table;
+    }
+    main .col-3{
+        display: block;
+        width: 70%;
+    }
+    main ul li{
+        width: 100%;
+    }
+}   
+@media (max-width: 800px){
+    p{
+    font-size: 0.8rem;
+    line-height: 1.2em;
+    }
+    main>h1+p{
+        display: none;
+    }
+}
+       
